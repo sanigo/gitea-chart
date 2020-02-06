@@ -203,6 +203,8 @@ config:
   requireSignin: false
   disableRegistration: false
   openidSignin: true
+  forcePrivate: false
+  defaultPrivate: false
 
 ## Common helm annotations
 ## Node labels and tolerations for pod assignment

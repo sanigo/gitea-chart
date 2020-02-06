@@ -28,9 +28,9 @@ data:
     ; Default ANSI charset
     ANSI_CHARSET =
     ; Force every new repository to be private
-    FORCE_PRIVATE = false
+    FORCE_PRIVATE = {{.Values.config.forcePrivate}}
     ; Default privacy setting when creating a new repository, allowed values: last, private, public. Default is last which means the last setting used.
-    DEFAULT_PRIVATE = last
+    DEFAULT_PRIVATE = {{.Values.config.defaultPrivate}}
     ; Global limit of repositories per user, applied at creation time. -1 means no limit
     MAX_CREATION_LIMIT = -1
     ; Mirror sync queue length, increase if mirror syncing starts hanging
